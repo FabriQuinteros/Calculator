@@ -1,0 +1,53 @@
+<!--<ion-header ><ion-title style="color:white">Calculato</ion-title></ion-header>-->
+<ion-content  >
+    <div id="calculadora" >
+        <div class="horizontal-display" #target2>
+            <input [(ngModel)]="screen" id="displayPanel" type="text" />
+        </div>  
+
+        <ion-grid #target3>
+            <ion-row col-12>
+                <ion-col col-3><div (click)="tecla('√')" id="tecla" id="tecla-gris" data-rnc-tag="" class="tecla">√</div></ion-col>
+                <ion-col col-3><div (click)="tecla('^')" id="tecla" id="tecla-gris" data-rnc-tag="" class="tecla">^</div></ion-col>
+                <ion-col col-3><div (click)="borrar()" id="tecla" id="tecla-gris" data-rnc-tag="" class="tecla">CE</div></ion-col>
+                <ion-col col-3><div (click)="borrarIndividual()" id="tecla" data-rnc-tag="" class="tecla">Del</div></ion-col>
+                
+            </ion-row>
+            <ion-row col-12>
+                    
+                    
+                    
+                <ion-col col-3><div (click)="tecla('7')" id="tecla" id="tecla-negra" data-rnc-tag="7" class="tecla">7</div></ion-col>
+                <ion-col col-3><div (click)="tecla('8')" id="tecla" id="tecla-negra" data-rnc-tag="8" class="tecla">8</div></ion-col>
+                <ion-col col-3><div (click)="tecla('9')" id="tecla" id="tecla-negra" data-rnc-tag="9" class="tecla">9</div></ion-col>
+                <ion-col col-3><div (click)="tecla('/')" id="tecla" class="tecla">/</div></ion-col>
+            </ion-row>
+            <ion-row col-12>
+                <ion-col col-3><div (click)="tecla('4')" id="tecla" id="tecla-negra" data-rnc-tag="4" class="tecla">4</div></ion-col>
+                <ion-col col-3><div (click)="tecla('5')" id="tecla" id="tecla-negra" data-rnc-tag="5" class="tecla">5</div></ion-col>
+                <ion-col col-3><div (click)="tecla('6')" id="tecla" id="tecla-negra" data-rnc-tag="6" class="tecla">6</div></ion-col>
+                <ion-col col-3><div (click)="tecla('*')" id="tecla" class="tecla">X</div></ion-col>
+                
+            </ion-row>
+            <ion-row col-12>   
+                <ion-col col-3><div (click)="tecla('1')" id="tecla" id="tecla-negra"  data-rnc-tag="1" class="tecla">1</div></ion-col>
+                <ion-col col-3><div (click)="tecla('2')" id="tecla" id="tecla-negra" data-rnc-tag="2" class="tecla">2</div></ion-col>
+                <ion-col col-3><div (click)="tecla('3')" id="tecla" id="tecla-negra" data-rnc-tag="3" class="tecla">3</div></ion-col>
+                <ion-col col-3><div (click)="tecla('-')" id="tecla"   class="tecla">-</div></ion-col>
+            </ion-row>
+            <ion-row col-12>  
+                <ion-col col-3><div (click)="tecla('0')" id="tecla" id="tecla-negra"  class="tecla">0</div></ion-col>
+                <ion-col col-3><div (click)="tecla('.')" id="tecla" id="tecla-negra"  class="tecla">.</div></ion-col>
+                <ion-col col-3><div (click)="calcular()" id="tecla" id="tecla-negra" class="tecla">=</div></ion-col>
+                <ion-col col-3><div (click)="tecla('+')" id="tecla"   class="tecla">+</div></ion-col>
+               
+            </ion-row>
+        </ion-grid>            
+
+        
+        
+        
+
+        
+    </div>
+</ion-content>

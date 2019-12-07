@@ -1,0 +1,25 @@
+<!--<ion-header ><ion-title>Functions Cuadratics</ion-title></ion-header>-->
+<ion-content padding style="background-color:#191919">
+
+
+  <form (ngSubmit)="calculate()" id="form">
+    <h3><strong>Input Variables</strong></h3>
+    <ion-item id="content-input">
+      
+      <ion-input placeholder="Coeficiente A:" id="A" [(ngModel)]="coef_a" type="text" name="coef_a" ></ion-input>
+    </ion-item>
+    <ion-item id="content-input">
+      
+      <ion-input placeholder="Coeficiente B:" id="A" [(ngModel)]="coef_b" type="text" name="coef_b"></ion-input>
+    </ion-item>
+    <ion-item id="content-input">
+      
+      <ion-input placeholder="Coeficiente C:" id="A" [(ngModel)]="coef_c" type="text" name="coef_c"></ion-input>
+    </ion-item>
+    <button id="btn" ion-button type="submit" block>Calculate</button>
+  </form>
+
+</ion-content>
+
+
+
